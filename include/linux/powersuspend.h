@@ -33,7 +33,9 @@
 
 #define POWER_SUSPEND_AUTOSLEEP	0	// Use kernel autosleep as hook
 #define POWER_SUSPEND_USERSPACE	1	// Use fauxclock as trigger
-#define POWER_SUSPEND_PANNEL	2	// Use display pannel state as hook
+
+#define POWER_SUSPEND_PANEL	2	// Use display panel state as hook
+#define POWER_SUSPEND_HYBRID	3	// Use display panel state and autosleep as hook
 
 struct power_suspend {
 	struct list_head link;
